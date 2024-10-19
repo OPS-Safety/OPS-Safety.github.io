@@ -1,0 +1,101 @@
+Pages:
+    - Homepage (Homepage)
+    - About us page (Team)
+    - Demo page: Demo of our product (Features)
+    - Pricing
+
+    - Categorise the report by type (crime, traffic, health, construction...)
+    - uOttawa Safety Awareness Page?
+    - Policy page?
+
+Style and Colours
+===============================
+For the OPS - Safety design, we have agreed to use the following style and colours:
+
+    Overall look: 
+        Scrolling with multiple pages 
+    Primary Colour Palette:
+    - Dark Cyan: #0396A6
+    - Light Cyan: #03A6A6
+    - Green : #B2BF80
+    - Grey: #D9D7C5
+    - Almost White: #F2ECEB
+
+We agreed to assign a color to each type of danger (i.e. environmental, crime, infrastructural, etc) and use a 
+gradated scale from green to red (red meaning very dangerous and green meaning not particularily harmful) to make it 
+easier for the user to distinguish the type and severity of the danger on the map. 
+
+Colours for each type of danger: (Note: these are just suggestions and can be changed if needed)
+
+1. Crime and Violence
+
+    Color: Deep Purple
+    Purple represents intensity and danger, often linked to mystery and crime.
+
+2. Traffic and Transportation Hazards
+
+    Color: Orange
+    Orange signifies caution, movement, and hazards, fitting for traffic-related risks.
+
+3. Health and Environmental Risks
+
+    Color: Light Blue
+    Light blue conveys air and water, linking to pollution and health concerns.
+
+4. Natural and Environmental Disasters
+
+    Color: Dark Gray
+    Dark gray symbolizes severity and unpredictability, as seen in natural disasters like earthquakes and storms.
+
+5. Infrastructure-Related Hazards
+
+    Color: Rust/Brown
+    Rust or brown symbolizes decay and degradation, fitting for structural failures and infrastructure-related dangers.
+
+6. Social and Psychological Risks
+
+    Color: Pale Pink
+    Pale pink is often associated with emotions and can symbolize the subtle yet impactful nature of mental health challenges.
+
+7. Public Safety and Civil Unrest
+
+    Color: Midnight Blue
+    Midnight blue conveys seriousness and order, fitting for public safety risks, protests, and civil unrest.
+
+8. Technological and Cyber Risks
+
+    Color: Neon Blue
+    Neon blue is modern and digital, representing technological risks and the high-tech nature of cyber threats.
+
+9. Substance Abuse and Addiction
+
+    Color: Burgundy
+    Burgundy, a dark and deep color, symbolizes excess and can be linked to substance abuse and addiction.
+
+
+Iconography
+=========== 
+
+We have agreed to add:
+    1. Maps icon you can click on to access the map of around uOttawa.
+    2. Coloured emojis (from red to green) based the severity of the reported danger on the map.
+
+Typography
+==========
+
+We have agreed to use the following fonts:
+
+    1. Red Hat Display for paragraphs
+    2. Rubik for headlines
+
+Links
+=====
+
+Links will be displayed as buttons with a message for links 
+
+Buttons
+=======
+
+Buttons will be squared with rounded corners and (possibly) filled in.
+
+
