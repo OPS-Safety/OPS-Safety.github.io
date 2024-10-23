@@ -1,12 +1,13 @@
-body {}
-
 .header {
   display: flex;
   flex-direction: row;
   height: 90px;
-  background-color: red;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: none;
+  
+
 }
 
 .logo {
@@ -14,7 +15,10 @@ body {}
 }
 
 .left-section {
-  width: 100px;
+  display: flex;
+  flex: 1;
+  padding-left: ;
+  justify-content: right;
 }
 
 .logo-mod {
@@ -24,15 +28,13 @@ body {}
 
 .mid-section {
   display: flex;
-  width: 180px;
-  max-width: 400px;
-  background-color: white;;
   justify-content: center;
-  width: ;
+  width: 300px;
 }
 
 .header-name {
-  font-family: Rubik;
+  font-family: Montserrat;
+  font-weight: 500;
   color: #03A6A6;
   font-size: 25px;
 }
@@ -41,7 +43,6 @@ body {}
   display: flex;
   flex: 1;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 button {
@@ -50,7 +51,31 @@ button {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 3px;
-  border: none;
+  border-color: #B2BF80;
   margin-left: 10px;
+  color: #B2BF80;
+  border-style: solid;
   cursor: pointer;
+  background-color: white;
+  transition: background-color 0.15s;
 }
+
+button:hover {
+  background-color: #B2BF80;
+  color: white;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+/* This is the end of the header section of the home page. */
+
+body {
+  background-color: #B2BF80;
+  margin: 0;
+}
+
+/* This is the main part of the home page. */
+
+.main
