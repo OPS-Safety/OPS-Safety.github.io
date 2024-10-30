@@ -54,9 +54,9 @@ a {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 3px;
-  border-color: #B2BF80;
+  border-color: #03A6A6;
   margin-left: 10px;
-  color: #B2BF80;
+  color: #03A6A6;
   border-style: solid;
   cursor: pointer;
   background-color: white;
@@ -64,7 +64,7 @@ a {
 }
 
 .button:hover {
-  background-color: #B2BF80;
+  background-color: #03A6A6;
   color: white;
 }
 
@@ -75,7 +75,7 @@ a {
 /* This is the end of the header section of the home page. */
 
 body {
-  background-color: #B2BF80;
+  background-color: #03A6A6;
   margin: 0;
 }
 
@@ -156,7 +156,7 @@ body {
 .meet-team{
   font-size:30px;
   font-family: Montserrat;
-  color: #03A6A6;
+  color: #ffffff;
   text-align: center;
   margin: 50px 0px 0px 0px;
 }
@@ -164,7 +164,7 @@ body {
 .about-us{
   font-size:40px;
   font-family: Montserrat;
-  color: #03A6A6;
+  color: #ffffff;
   text-align: left;
   margin: 0px 0px 0px 180px;
 }
@@ -191,4 +191,7 @@ body {
   line-height: 1.6;
 }
 
+.TeamPage{
+  background-color: #03A6A6;
+}
 /*This is the end of Team Page*/
