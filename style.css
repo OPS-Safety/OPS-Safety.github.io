@@ -195,3 +195,13 @@ body {
   background-color: #03A6A6;
 }
 /*This is the end of Team Page*/
+/*This is the end of Team Page*/
+
+iframe {
+  margin-left: 14rem;
+  margin-top: 1rem;
+  border:5px solid #03A6A6;
+  border-radius: 4px;
+}
+
+/*This is the end of the demo page*/
