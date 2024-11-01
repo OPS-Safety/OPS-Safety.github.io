@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Page</title>
     <link rel="stylesheet" href="styles_homepage.css">
     <link rel="stylesheet" href="styles_demo.css">
     <link rel="stylesheet" href="styles_features.css">
@@ -13,6 +17,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <style>
+        #map {
+          height:800px;
+          width:800px;
+          margin:5rem auto;
+        }
+    </style>
   </head>
   <body>
 
@@ -37,10 +49,12 @@
         </div>
       <!--This is the end of the header section of the Home Page-->
     <!--Hero Section-->
+      </div>
     </div>
-  </div>
-  <div>
-    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359537.0372323226!2d-75.8002569!3d45.25015655000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1730251260502!5m2!1sen!2sca" width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-  </div>
+    <div id="map">
+      
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
