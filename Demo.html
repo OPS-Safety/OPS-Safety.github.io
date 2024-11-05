@@ -51,8 +51,52 @@
     <!--Hero Section-->
       </div>
     </div>
-    <div id="map">
-      
+    <div id="map"></div>
+    <div id="demo_features">
+      <h2 id="demo_feature">Interactive map</h2>
+      <h2 id="demo_feature">Add comments about areas in Ottawa</h2>
+      <h3>- About the level of safety</h3>
+      <h3>- Sort by colour based on level of danger</h3>
+      <h2 id="demo_feature">Live alert system</h2>
+      <h2 id="demo_feature">Calling emergency numbers feature</h2>
+    </div>
+<!--Live alert reporting feature-->
+    <div class="services">
+      <h1>Alert Report Form</h1>
+      <form id="issueForm">
+          <div>
+              <label for="street" id="Text">Street Name:</label>
+              <input type="text" class="input" id="street" name="street" required>
+          </div>
+          <br>
+          <div>
+              <label for="area" id="Text">Area on the Street:</label>
+              <input type="text" class="input" id="area" name="area" required>
+          </div>
+          <br>
+          <div>
+              <label for="issue-type" id="Text">Type of Issue:</label>
+              <input type="text" class="input" id="issue-type" name="issue-type" required>
+          </div>
+          <br>
+          <div>
+              <label for="description" id="Text">Description:</label>
+              <textarea class="input" id="description" name="description" required></textarea>
+          </div>
+          <br>
+          <div>
+              <button type="submit" class="submit__btn">Submit</button>
+          </div>
+      </form>
+    </div>
+    <div class="services" id="Title">    
+      <h1>Alerts</h1>
+    </div>
+    <div class="services" id="services">
+      <input type="text" id="searchBar" placeholder="Search streets..." oninput="filterReports()">
+      <div id="submittedData2">
+          <div id="submittedData"></div>
+      </div>
     </div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="main.js"></script>
