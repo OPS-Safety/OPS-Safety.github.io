@@ -1,1 +1,92 @@
 /*This is for the features pages*/
+/* Scoped CSS for Features Page */
+
+/* General Reset */
+#features-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the Features Page */
+#features-page .features-main {
+    font-family: 'Rubik', sans-serif;
+    background-color: #03A6A6; 
+    color: #333;
+    line-height: 1.6;
+    padding: 4em 2em; /* Adjusted top padding for layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Header Styling for Features Page */
+#features-page .features-header {
+    background-color: #B2BF80; /* Dark Cyan */
+    color: #ffffff; /* Almost White */
+    padding: 2em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.5em; /* Space below the header */
+}
+
+#features-page .features-header h1 {
+    font-size: 3em; /* Increased font size for main heading */
+    margin-bottom: 0.5em;
+}
+
+#features-page .features-header p {
+    font-size: 1.5em; /* Increased font size for subheading */
+}
+
+/* Features List */
+#features-page #feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3em; /* Space between feature items */
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width of the feature list */
+    align-items: center; /* Center the feature items */
+}
+
+/* Feature Item Styling */
+#features-page .feature-item {
+    background-color: #ffffff; /* Grey */
+    color: #333;
+    padding: 6em; /* Increased padding to make the boxes thicker */
+    border-radius: 16px; /* Rounded corners */
+    width: 100%; /* Take up full width of the container */
+    max-width: 1300px; /* Increased max width for longer boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.2em; /* Adjusted font size for better readability */
+}
+
+#features-page .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #F2ECEB; /* Green */
+    color: #0396A6; /* Dark Cyan */
+}
+
+#features-page .feature-item h2 {
+    color: #0396A6; /* Light Cyan */
+    margin-bottom: 0.5em;
+    font-size: 2em; /* Increased font size for feature item headings */
+}
+
+#features-page .feature-item p {
+    display: none; /* Initially hidden */
+    font-size: 1.1em; /* Adjusted font size for feature item descriptions */
+}
+
+/* Feature Icon Styling */
+#features-page .feature-item .feature-icon {
+    width: 100px; /* Set icon width; adjust as needed */
+    height: auto;
+    margin-right: 0.9em; /* Space between icon and title */
+    vertical-align: middle; /* Align icon with text */
+    float: left; /* Align icon to the left of the title */
+}

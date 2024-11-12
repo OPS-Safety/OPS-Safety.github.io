@@ -1,3 +1,16 @@
+//Toggling visibility on for features
+document.addEventListener("DOMContentLoaded", () => {
+    const featureItems = document.querySelectorAll(".feature-item");
+  
+    featureItems.forEach(item => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("expanded");
+        const description = item.querySelector("p");
+        description.style.display = description.style.display === "none" ? "block" : "none";
+      });
+    });
+  });
+
 //Map
 const mymap = L.map('map').setView([45.43570480978292, -75.67560242175543], 14);
 

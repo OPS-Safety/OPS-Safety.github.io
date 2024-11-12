@@ -1,39 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features Page</title>
     <link rel="stylesheet" href="styles_homepage.css">
-    <link rel="stylesheet" href="styles_demo.css">
     <link rel="stylesheet" href="styles_features.css">
-    <link rel="stylesheet" href="styles_policy.css">
-    <link rel="stylesheet" href="styles_pricing.css">
-    <link rel="stylesheet" href="styles_team.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <div class="main-page">
-      <!--This is the header section of the Home Page-->
+      <!-- Header section (Unchanged) -->
       <div class="header">
         <div class="left-section">
-          <div class="logo-mod"><img class="logo" src="mockups/IMG_2288.PNG" alt = logo usemap = "#interactlogo">
-            <map name="interactlogo">
-              <area shape="default" href="Homepage.html">
-            </map>
+          <div class="logo-mod">
+            <img class="logo" src="mockups/IMG_2288.PNG" alt="Logo">
           </div>
         </div>
-  
         <div class="mid-section">
-          <p class="header-name"><a class = "link_to_logo" href="/Homepage.html">O.P.S Safety</a></p>
+          <p class="header-name">O.P.S Safety</p>
         </div>
-        
         <div class="right-section">
           <a class="button" href="/Homepage.html">Home</a>
           <a class="button" href="/Features.html">Features</a>
@@ -42,8 +31,45 @@
           <a class="button" href="/Pricing.html">Pricing</a>
           <a class="button" href="/Policy.html">Policy</a>
         </div>
-      <!--This is the end of the header section of the Home Page-->
-    </div>
+      </div>
+      
+      <!-- Features Section (Scoped to #features-page) -->
+      <div id="features-page" class="content-section">
+        <main class="features-main">
+          <header class="features-header">
+            <h1>Key Features</h1>
+            <p>Explore the unique features that make your city safer and smarter.</p>
+          </header>
+          <section id="feature-list">
+            <div class="feature-item" data-feature="Real-Time Incident Alerts">
+              <img src="icons/Alert.png" alt="Real-Time Incident Icon" class="feature-icon">
+              <h2>Real-Time Incident Alerts</h2>
+              <p>You receive instant notifications about safety threats in your vicinity, such as crime, road closures, or hazardous conditions. The app uses live data from local authorities and user reports, allowing for quick and informed decisions about safe routes.</p>
+            </div>
+            <div class="feature-item" data-feature="Safety Map">
+              <img src="icons/Map.png" alt="Safety Map Icon" class="feature-icon">
+              <h2>Safety Map</h2>
+              <p>An interactive map color-coded to indicate safe and unsafe areas based on real-time data and historical trends. This feature provides you with an easy-to-read overview of neighborhood safety, showing recent incident history and safety ratings for different regions.</p>
+            </div>
+            <div class="feature-item" data-feature="Safe Route Planning">
+              <img src="icons/Route.png" alt="Safe Route Planning Icon" class="feature-icon">
+              <h2>Safe Route Planning</h2>
+              <p>Our app provides provides safety scores for walking, driving, and biking routes based on current incidents, lighting conditions, and other environmental factors. You can select the safest routes for your journey, with detailed insights into why each route is recommended.</p>
+            </div>
+            <div class="feature-item" data-feature="SOS Emergency Assistance">
+              <img src="icons/SOS.png" alt="SOS Icon" class="feature-icon">
+              <h2>SOS Emergency Assistance</h2>
+              <p>A built-in SOS button connects you with local emergency services and sends your live location to pre-selected emergency contacts. In the event of a dangerous situation, you can activate this feature to receive immediate assistance, enhancing personal security.</p>
+            </div>
+            <div class="feature-item" data-feature="Community Reporting & Verification">
+              <img src="icons/Report.png" alt="Community Reporting Icon" class="feature-icon">
+              <h2>Community Reporting & Verification</h2>
+              <p>With this feature, users can easily report any suspicious activity, safety concerns, or hazards they encounter along their routes. Each report is quickly verified and cross-checked with trusted sources to ensure accuracy. This community-driven approach gives you reliable information while helping reduce false alarms, creating a safer environment for everyone in the area.</p>
+            </div>
+          </section>
+        </main>
+      </div>
+      <!-- End of Features Section -->
     </div>
     <script src="main.js"></script>
   </body>
