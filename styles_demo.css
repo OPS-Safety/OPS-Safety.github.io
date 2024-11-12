@@ -27,8 +27,16 @@ div#map {
   line-height:1;
 }
 
+#emergency {
+  clear:both;
+  float: left;
+  margin-left:1.4rem;
+  margin-top:-5rem;
+  color: white;
+}
+
 .services {
-  clear: both;
+  clear:right;
   display: flex;
   flex-direction: column;
   align-items: center;

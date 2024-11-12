@@ -91,6 +91,8 @@ body {
   flex-direction: column;
   height: 100vh;
   background-color: white;
+  border: 5px solid white;
+  border-radius: 5px;
   margin-top: 90px;
   margin-bottom: 90px;
   margin-left: 300px;
@@ -112,12 +114,7 @@ body {
   padding-bottom: 70px;
 }
 
-.demo-page {
-  position: relative;
-  overflow: hidden;
-}
-
-.demo-page .main-page::before {
+.background .main-page::before {
   content: '';
   position: absolute;
   top: 0;
