@@ -26,3 +26,6 @@
     font-family: Montserrat;
     text-align: justify;
 }
+
+.link_to_logo:link {color:#03A6A6}
+.link_to_logo:visited {color:#03A6A6}
