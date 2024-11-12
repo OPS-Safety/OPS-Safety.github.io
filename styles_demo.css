@@ -140,3 +140,23 @@ button#delete__btn:hover {
 
   /*This is the end of the demo page*/
   
+h2{
+  font-family: montserrat;
+}
+
+h1{
+  font-family: montserrat;
+}
+
+h3{
+  font-family: montserrat;
+}
+
+.emergency{
+  font-family: montserrat;
+}
+
+.search-bar:focus::placeholder{
+  color: transparent;
+  border-color: none;
+}
