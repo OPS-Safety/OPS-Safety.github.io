@@ -104,6 +104,7 @@ div#map {
   border-radius: 4px;
   background: #03A6A6;
   color: #fff;
+  font-family: montserrat;
 }
 
 .submit__btn:hover {
