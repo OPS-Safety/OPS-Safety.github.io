@@ -12,17 +12,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 //Map
-const mymap = L.map('map').setView([45.43570480978292, -75.67560242175543], 14);
+const mymap = L.map("map").setView([45.43570480978292, -75.67560242175543], 14);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
 }).addTo(mymap);
 
-    //Marker
+    //Markers
+        //Customizing map markers
+var greenIcon = L.icon({
+    iconUrl: "Pictures/marker.png",
 
-const marker1 = L.marker([45.433072080749966, -75.6776305242554]).addTo(mymap);
-const marker2 = L.marker([45.44183026263848, -75.66666991913777]).addTo(mymap);
+    iconSize:     [35, 37], // size of the icon
+    iconAnchor:   [16, 40], // point of the icon which will correspond to marker's location
+    popupAnchor:  [2, -34] // point from which the popup should open relative to the iconAnchor
+});
 
+const marker1 = L.marker([45.433072080749966, -75.6776305242554], {icon: greenIcon}).addTo(mymap)
+const marker2 = L.marker([45.44183026263848, -75.66666991913777], {icon: greenIcon}).addTo(mymap);
+const marker3 = L.marker([45.429396, -75.683736], {icon: greenIcon}).addTo(mymap);
+const marker4 = L.marker([45.428635, -75.687089], {icon: greenIcon}).addTo(mymap);
     //Popup message
 let template = `
 
@@ -33,17 +42,51 @@ let template = `
 `
 marker1.bindPopup(template)
 marker2.bindPopup("<h4>Murder by stabbing happened on this street</h4>")
-
+marker3.bindPopup("<h4>Know homeless meet up area</h4>")
+marker4.bindPopup("<h4>An unsafe shopping centre</h4>")
     //Circle
 
-const circle = L.circle([45.43997982726112, -75.6657004625648], {
+const ripple1 = L.circle([45.43997982726112, -75.6657004625648], {
     radius:600,
     color:"red",
     fillColor: "red",
     fillOpacity:0.2
 }).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
+const ripple2 = L.circle([45.43997982726112, -75.6657004625648], {
+    radius:500,
+    color:"red",
+    fillColor: "red",
+    fillOpacity:0.19
+}).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
+const ripple3 = L.circle([45.43997982726112, -75.6657004625648], {
+    radius:400,
+    color:"red",
+    fillColor: "red",
+    fillOpacity:0.18
+}).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
+
+const ripple4 = L.circle([45.43997982726112, -75.6657004625648], {
+    radius:300,
+    color:"red",
+    fillColor: "red",
+    fillOpacity:0.17
+}).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
+
+const ripple5 = L.circle([45.43997982726112, -75.6657004625648], {
+    radius:200,
+    color:"red",
+    fillColor: "red",
+    fillOpacity:0.16
+}).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
+
+const ripple6 = L.circle([45.43997982726112, -75.6657004625648], {
+    radius:100,
+    color:"red",
+    fillColor: "red",
+    fillOpacity:0.15
+}).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
 const circle1 = L.circle([45.425424881797206, -75.68935052719488], {
     radius:300,
@@ -59,28 +102,6 @@ const circle2 = L.circle([45.42248387314212, -75.69710264614643], {
     fillOpacity:0.2
 }).addTo(mymap).bindPopup("<h4>Police Stations near</h4>")
 
-const circle3 = L.circle([45.425996699571925, -75.68396846293271], {
-    radius:300,
-    color:"green",
-    fillColor: "green",
-    fillOpacity:0.2
-}).addTo(mymap).bindPopup("<h4>Fire Stations near</h4>")
-
-const circle4 = L.circle([45.434977128131045, -75.6908676329835], {
-    radius:300,
-    color:"green",
-    fillColor: "green",
-    fillOpacity:0.2
-}).addTo(mymap).bindPopup("<h4>Fire Stations near</h4>")
-
-
-const circle5 = L.circle([45.443755508480606, -75.66770764074332], {
-    radius:300,
-    color:"green",
-    fillColor: "green",
-    fillOpacity:0.2
-}).addTo(mymap).bindPopup("<h4>Fire Stations near</h4>")
-
     // Polygon
 
 const polygon = L.polygon([
@@ -90,8 +111,8 @@ const polygon = L.polygon([
     [45.43689281858124, -75.65974222515948],
     [45.43454633382215, -75.66562706261162],
 ], {
-    color:"blue",
-    fillColor:"blue",
+    color:"#03A6A6",
+    fillColor:"#03A6A6",
     fillOpacity:0.2
 }).addTo(mymap).bindPopup("<h4>Known drugdealing gang in this area</h4>")
 
@@ -120,30 +141,6 @@ const polygon2 = L.polygon([
     fillOpacity:0.2
 }).addTo(mymap).bindPopup("<h4>Street frequented by people under the influence of drugs</h4>")
 
-const polygon3 = L.polygon([
-    [45.42819006203674, -75.6875031662516],
-    [45.42869810555097, -75.68788052644287],
-    [45.42926019091928, -75.68642114366233],    
-    [45.428781878244465, -75.68612849698339],
-    [45.42819006203674, -75.6875031662516],
-], {
-    color:"blue",
-    fillColor:"blue",
-    fillOpacity:0.2
-}).addTo(mymap).bindPopup("<h4>An unsafe shopping centre</h4>")
-
-const polygon4 = L.polygon([
-    [45.4294778077171, -75.68399778845692],
-    [45.429559516112356, -75.68363556429465],
-    [45.429350705533736, -75.68344582782869],
-    [45.42922662931683, -75.68370887156559],
-    [45.4294778077171, -75.68399778845692],
-], {
-    color:"blue",
-    fillColor:"blue",
-    fillOpacity:0.2
-}).addTo(mymap).bindPopup("<h4>Know homeless meet up area</h4>")
-
 const polygon5 = L.polygon([
     [45.426110668070585, -75.68591005638599],
     [45.426178673308286, -75.68575331077473],
@@ -156,32 +153,44 @@ const polygon5 = L.polygon([
     fillOpacity:0.2
 }).addTo(mymap).bindPopup("<h4>Known drugdealing gang in this house</h4>")
 
+//Viewing Coordinates on map 
+
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(mymap);
+}
+
+mymap.on('click', onMapClick); 
 
 
 //Live alert reporting feature
-const reports = JSON.parse(localStorage.getItem('reports')) || [];
+const reports = JSON.parse(localStorage.getItem("reports")) || [];
 
-document.getElementById('issueForm').addEventListener('submit', function(event) {
+document.getElementById("issueForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const street = document.getElementById('street').value;
-    const area = document.getElementById('area').value;
-    const issueType = document.getElementById('issue-type').value;
-    const description = document.getElementById('description').value;
+    const street = document.getElementById("street").value;
+    const area = document.getElementById("area").value;
+    const issueType = document.getElementById("issue-type").value;
+    const description = document.getElementById("description").value;
 
     const newReport = { street, area, issueType, description };
 
     reports.push(newReport);
-    localStorage.setItem('reports', JSON.stringify(reports));
+    localStorage.setItem("reports", JSON.stringify(reports));
 
     displayReports();
 
     // Clear the form inputs after submission
-    document.getElementById('issueForm').reset();
+    document.getElementById("issueForm").reset();
 });
 
 function displayReports(filter = '') {
-    const submittedData = document.getElementById('submittedData');
+    const submittedData = document.getElementById("submittedData");
     submittedData.innerHTML = '';
 
     reports.forEach((report, index) => {
@@ -204,13 +213,13 @@ function displayReports(filter = '') {
 }
 
 function filterReports() {
-    const filter = document.getElementById('searchBar').value.toLowerCase().trim();
+    const filter = document.getElementById("searchBar").value.toLowerCase().trim();
     displayReports(filter);
 }
 
 function deleteReport(index) {
     reports.splice(index, 1);
-    localStorage.setItem('reports', JSON.stringify(reports));
+    localStorage.setItem("reports", JSON.stringify(reports));
     displayReports();
 }
 
