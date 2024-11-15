@@ -400,3 +400,7 @@ body {
   height: 400px;
   justify-content: center;
 }
+
+.rime-container:hover{
+  background-color: ;
+}

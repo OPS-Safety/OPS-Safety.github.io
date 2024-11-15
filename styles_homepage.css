@@ -22,6 +22,7 @@ a {
   display: flex;
   flex: 1;
   justify-content: right;
+  background-color: pink;
 }
 
 .logo-mod {
@@ -33,6 +34,7 @@ a {
   display: flex;
   justify-content: center;
   width: 300px;
+  background-color: red;
 }
 
 .header-name {
@@ -46,6 +48,7 @@ a {
   display: flex;
   flex: 1;
   justify-content: center;
+  background-color: green;
 }
 
 .button {
