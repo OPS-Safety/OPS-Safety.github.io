@@ -23,9 +23,9 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 var greenIcon = L.icon({
     iconUrl: "Pictures/marker.png",
 
-    iconSize:     [35, 37], // size of the icon
+    iconSize:     [30, 37], // size of the icon
     iconAnchor:   [16, 40], // point of the icon which will correspond to marker's location
-    popupAnchor:  [2, -34] // point from which the popup should open relative to the iconAnchor
+    popupAnchor:  [0, -34] // point from which the popup should open relative to the iconAnchor
 });
 
 const marker1 = L.marker([45.433072080749966, -75.6776305242554], {icon: greenIcon}).addTo(mymap)
@@ -89,18 +89,18 @@ const ripple6 = L.circle([45.43997982726112, -75.6657004625648], {
 }).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
 const circle1 = L.circle([45.425424881797206, -75.68935052719488], {
-    radius:300,
+    radius:120,
     color:"green",
     fillColor: "green",
     fillOpacity:0.2
-}).addTo(mymap).bindPopup("<h4>Police Stations near</h4>")
+}).addTo(mymap).bindPopup("<h4>Local Emergency Services near</h4>")
 
 const circle2 = L.circle([45.42248387314212, -75.69710264614643], {
     radius:300,
     color:"green",
     fillColor: "green",
     fillOpacity:0.2
-}).addTo(mymap).bindPopup("<h4>Police Stations near</h4>")
+}).addTo(mymap).bindPopup("<h4>Local Emergency Services near</h4>")
 
     // Polygon
 
