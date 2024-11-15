@@ -420,13 +420,13 @@ body {
 
 .Image-7{
   width: 100%;
-  max-width: 600px;
-  max-height: 400px;
+  max-width: 450px;
+  max-height: 550px;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
   border: 3px solid black;
-  margin-right:20px;
+  margin-right:100px;
 }
 
 .text-content-team{

@@ -50,42 +50,42 @@ const ripple1 = L.circle([45.43997982726112, -75.6657004625648], {
     radius:600,
     color:"red",
     fillColor: "red",
-    fillOpacity:0.2
+    fillOpacity:0.15
 }).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
 const ripple2 = L.circle([45.43997982726112, -75.6657004625648], {
     radius:500,
     color:"red",
     fillColor: "red",
-    fillOpacity:0.19
+    fillOpacity:0.14
 }).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
 const ripple3 = L.circle([45.43997982726112, -75.6657004625648], {
     radius:400,
     color:"red",
     fillColor: "red",
-    fillOpacity:0.18
+    fillOpacity:0.13
 }).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
 const ripple4 = L.circle([45.43997982726112, -75.6657004625648], {
     radius:300,
     color:"red",
     fillColor: "red",
-    fillOpacity:0.17
+    fillOpacity:0.12
 }).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
 const ripple5 = L.circle([45.43997982726112, -75.6657004625648], {
     radius:200,
     color:"red",
     fillColor: "red",
-    fillOpacity:0.16
+    fillOpacity:0.11
 }).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
 const ripple6 = L.circle([45.43997982726112, -75.6657004625648], {
     radius:100,
     color:"red",
     fillColor: "red",
-    fillOpacity:0.15
+    fillOpacity:0.10
 }).addTo(mymap).bindPopup("<h4>Dangerous area</h4>")
 
 const circle1 = L.circle([45.425424881797206, -75.68935052719488], {
