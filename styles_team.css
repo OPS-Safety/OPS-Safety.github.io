@@ -206,6 +206,8 @@ body {
   background-color: white;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
 /* This is the css for Ariel's profile. */
@@ -232,6 +234,8 @@ body {
   margin-left: 70px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
 /* This is the css for Adam's profile. */
@@ -256,6 +260,8 @@ body {
   background-color: white;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
 /* This is the end of the first row of the profiles. */
@@ -284,6 +290,8 @@ body {
   background-color: white;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
 /* This is the css for Ariel's profile. */
@@ -312,6 +320,8 @@ body {
   margin-left: 70px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
 /* This is the css for Adam's profile. */
@@ -336,6 +346,28 @@ body {
   background-color: white;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.omar-container:hover,.berdy-container:hover,.adam-container:hover,.ariel-container:hover,.rime-container:hover,.roheen-container:hover{
+  transform: rotateY(180deg);
+  background-color: white;
+} 
+
+.thefront{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.theback{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 /* This is the end of the second row of the profiles. */
