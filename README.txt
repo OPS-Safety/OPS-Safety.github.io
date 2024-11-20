@@ -1,4 +1,4 @@
-This is a readme.
+This is our readme.
 Team name: OPS-Safety
 Product name: OPS-Safety
 Product description: GPS of around uOttawa where you can add comments/reports in
